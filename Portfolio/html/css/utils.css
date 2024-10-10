@@ -1,0 +1,16 @@
+.flex{
+    display: flex;
+    
+}
+.iteam-centre{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justfy-center{
+    justify-content: center;
+}
+.justfy-right{
+    justify-content: flex-end;
+}

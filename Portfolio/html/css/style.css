@@ -1,0 +1,199 @@
+
+:root {
+    --primary-color: #00f3fc;  
+    --secondary-color: #c44129;
+    --ternary-color: #ec9332;
+    --quaternary-color: #3e8410;
+    --bgDark: #333;
+    --bgLight: #f4f4f4;
+    --white: #fff;
+}
+html {
+     scroll-behavior: smooth;
+}   
+
+* {
+
+    font-family: monospace,IBM Plex Mono;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: grid;
+    background-image: url(../html/Portfolio/html/Assets/bg.png);
+    background-repeat: round;
+    grid-template-areas: 
+    "header main aside"
+    "header nav nav"
+    "header main1 aside1"
+    "header nav1 nav1"
+    "header  aside2_2 aside2_3"
+    "header nav2 nav2"
+    "header aside3_2 aside3_3"
+    "header nav3 nav3"
+    "header aside4_2 aside4_3"
+
+    "footer footer footer";
+    grid-template-columns: 80px 4fr 4fr;
+    grid-template-rows: 3fr 1fr 4fr 1fr 4fr 1fr 4fr;
+}
+header, main, nav, aside, .main1, .aside1, 
+.nav1, .aside2_1, .aside2_2, .aside2_3, 
+.nav2,.aside3_1, .aside3_2, .aside3_3,
+.nav3 ,.aside4_1, .aside4_2, .aside4_3, 
+footer {
+    /* border: 1px solid rgb(255, 255, 255); */
+
+    text-align: center;
+    color: rgb(11, 240, 114);
+    padding: 20px;
+}
+.headerbar {
+    position: fixed;
+    top: 50%;
+    left: 6%;
+    transform: translate(-50%, -50%);
+}
+header {
+    grid-area: header;;
+}
+nav {
+    grid-area: nav;
+    
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+}
+.aside1 {
+    grid-area: aside1;
+    /* box-shadow: 0 0 10px rgba(216, 216, 216, 0.5); */
+    border-radius: 50px;
+}
+.main1 {
+    grid-area: main1;
+   
+}
+.nav1 {
+    grid-area: nav1;
+}
+.aside2_1 {
+    grid-area: aside2_1;
+
+}
+.aside2_2 {
+    grid-area: aside2_2;
+}
+.aside2_3 {
+    grid-area: aside2_3;
+}
+.nav2 {
+    grid-area: nav2;
+}
+.aside3_1 {
+    grid-area: aside3_1;
+}
+.aside3_2 {
+    grid-area: aside3_2;
+}
+.aside3_3 {
+    grid-area: aside3_3;
+}
+.nav3 {
+    grid-area: nav3;
+}
+.aside4_1 {
+    grid-area: aside4_1;
+}
+.aside4_2 {
+    grid-area: aside4_2;
+}
+.aside4_3 {
+    grid-area: aside4_3;
+}
+footer {
+    grid-area: footer;
+}
+/* header area */
+header .navbar .navspace  img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  
+}
+header .navbar .navspace {
+    margin-right: 20px;
+    padding: 10px;
+   
+}
+
+header .navbar .navspace a {
+color: var(--primary-color);  
+text-decoration: none;  
+}
+header .navbar .navspace a:hover {
+color: var(--ternary-color);
+transition: color 0.3s ease;
+}
+/* main area */
+main {
+  
+    flex-direction: column;
+    color: var(--white);
+    padding: 20px;
+    
+}
+main .hi {
+    
+    color: var(--white);
+    padding: 20px;
+    margin: 100px;
+   
+}
+/* aside profile pic area  */
+aside{
+
+    color: var(--white);
+    
+    margin: 40px;
+}
+
+
+aside .hi img {
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(216, 216, 216, 0.5);
+    
+}
+/* about nav area */
+nav.about a{
+    color: var(--white);
+    padding: 0px;
+}
+nav.about a:hover {
+    color: var(--ternary-color);
+    transition: color 0.3s ease;
+}
+.aside2_1 .project1 img {
+    height: 100px;
+    
+
+}
+.aside2_2 .project1 img {
+    height: 100px;
+}
+.aside2_3 .project1 img {
+    height: 100px;
+}

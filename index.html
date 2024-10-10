@@ -1,0 +1,385 @@
+git push -u origin maingit push -u origin main<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../html/Portfolio/html/css/style.css">
+    <style>
+     
+
+        :root {
+            --primary-color: #00f3fc;  
+            --secondary-color: #c44129;
+            --ternary-color: #ec9332;
+            --quaternary-color: #3e8410;
+            --bgDark: #333;
+            --bgLight: #f4f4f4;
+            --white: #fff;
+        }
+        html {
+             scroll-behavior: smooth;
+        }   
+
+        * {
+        
+            font-family: monospace,IBM Plex Mono;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            display: grid;
+            background-image: url(../html/Portfolio/html/Assets/bg.png);
+            background-repeat: round;
+            grid-template-areas: 
+            "header main aside"
+            "header nav nav"
+            "header main1 aside1"
+            "header nav1 nav1"
+            "header  aside2_2 aside2_3"
+            "header nav2 nav2"
+            "header aside3_2 aside3_3"
+            "header nav3 nav3"
+            "header aside4_2 aside4_3"
+
+            "footer footer footer";
+            grid-template-columns: 80px 4fr 4fr;
+            grid-template-rows: 3fr 1fr 4fr 1fr 4fr 1fr 4fr;
+        }
+        header, main, nav, aside, .main1, .aside1, 
+        .nav1, .aside2_1, .aside2_2, .aside2_3, 
+        .nav2,.aside3_1, .aside3_2, .aside3_3,
+        .nav3 ,.aside4_1, .aside4_2, .aside4_3, 
+        footer {
+            /* border: 1px solid rgb(255, 255, 255); */
+    
+            text-align: center;
+            color: rgb(11, 240, 114);
+            padding: 20px;
+        }
+        .headerbar {
+            position: fixed;
+            top: 50%;
+            left: 6%;
+            transform: translate(-50%, -50%);
+        }
+        header {
+            grid-area: header;;
+        }
+        nav {
+            grid-area: nav;
+            
+        }
+        main {
+            grid-area: main;
+        }
+        aside {
+            grid-area: aside;
+        }
+        .aside1 {
+            grid-area: aside1;
+            /* box-shadow: 0 0 10px rgba(216, 216, 216, 0.5); */
+            border-radius: 50px;
+        }
+        .main1 {
+            grid-area: main1;
+           
+        }
+        .nav1 {
+            grid-area: nav1;
+        }
+        .aside2_1 {
+            grid-area: aside2_1;
+        
+        }
+        .aside2_2 {
+            grid-area: aside2_2;
+        }
+        .aside2_3 {
+            grid-area: aside2_3;
+        }
+        .nav2 {
+            grid-area: nav2;
+        }
+        .aside3_1 {
+            grid-area: aside3_1;
+        }
+        .aside3_2 {
+            grid-area: aside3_2;
+        }
+        .aside3_3 {
+            grid-area: aside3_3;
+        }
+        .nav3 {
+            grid-area: nav3;
+        }
+        .aside4_1 {
+            grid-area: aside4_1;
+        }
+        .aside4_2 {
+            grid-area: aside4_2;
+        }
+        .aside4_3 {
+            grid-area: aside4_3;
+        }
+        footer {
+            grid-area: footer;
+        }
+     /* header area */
+        header .navbar .navspace  img {
+            width: 40px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+          
+        }
+        header .navbar .navspace {
+            margin-right: 20px;
+            padding: 10px;
+           
+        }
+      
+        header .navbar .navspace a {
+        color: var(--primary-color);  
+        text-decoration: none;  
+        }
+        header .navbar .navspace a:hover {
+        color: var(--ternary-color);
+        transition: color 0.3s ease;
+        }
+        /* main area */
+        main {
+          
+            flex-direction: column;
+            color: var(--white);
+            padding: 20px;
+            
+        }
+        main .hi {
+            
+            color: var(--white);
+            padding: 20px;
+            margin: 100px;
+           
+        }
+        /* aside profile pic area  */
+        aside{
+        
+            color: var(--white);
+            
+            margin: 40px;
+        }
+
+
+        aside .hi img {
+            width: auto;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(216, 216, 216, 0.5);
+            
+        }
+        /* about nav area */
+        nav.about a{
+            color: var(--white);
+            padding: 0px;
+        }
+        nav.about a:hover {
+            color: var(--ternary-color);
+            transition: color 0.3s ease;
+        }
+        .aside2_1 .project1 img {
+            height: 100px;
+            
+
+        }
+        .aside2_2 .project1 img {
+            height: 100px;
+        }
+        .aside2_3 .project1 img {
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body >
+    <!-- navbar section -->
+    <header>
+        <div class="container headerbar">
+            <div class="navbar" >
+                <dl>
+                    <dt class="navspace"><img src="../html/Portfolio/html/Assets/logo.png" alt="logo"> </dt>
+                    <dt class="navspace"><a href="#">Home</a></dt>
+                    <dt class="navspace"><a href="#about">About</a></dt>
+                    <dt class="navspace"><a href="#project">Projects</a></dt>
+                    <dt class="navspace"><a href="#blog">Blog</a></dt>
+                    <dt class="navspace"><a href="#youtube">Youtube</a></dt>
+                    <dt class="navspace" ><a href="#Contact">Contact</a></dt>
+                </dl>
+            </div>
+
+        </div>
+    </header>
+    <!-- main description section  -->
+    <main>
+        <div class="hi main">
+            <h1>Hi, I'm Midhin</h1>
+            <p>fullstack Developer</p>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt autem nostrum vel repellat minima deserunt voluptatibus, rem nam. Est laborum animi sit at exercitationem facere dolores soluta ut pariatur cum esse sequi magni, reiciendis sunt sapiente ducimus nisi amet optio.
+            </p>   
+        </div>
+    </main>
+    <!-- aside section with profile picture -->
+    <aside>
+        <div class="hi aside" id="home">
+            <img src="../html/Portfolio/html/Assets/2.jpg" alt="pic1">
+            <br>
+            <br>
+            <h3>Hi, I'm Midhin</h1>
+                <br>
+            <p>fullstack Developer</p>  
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit earum molestiae est modi. Itaque, sunt. Magni iure cum voluptas eveniet nihil, modi impedit vel debitis optio cumque omnis qui quae? Eius iure omnis, voluptatibus quasi quis eaque delectus non accusantium! Veniam eum, quidem ipsa aliquam ex fugiat officiis aut dolore?</p> 
+        </div>
+    </aside>
+    <!-- about nav section -->
+    <nav class="about nav" id="about">
+        <a href="#"> <h1>About</h1></a>
+    </nav>
+    <!-- aside about section -->
+    <main class="main1">
+        <div class="about main1 ">
+            <h1>Hello....!</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus porro enim voluptate nemo, excepturi aliquid, ipsum perferendis dicta quo molestias! Ex facere veniam dolorem ratione doloremque cumque aliquid, 
+                qui et nihil commodi maxime ducimus quisquam, dolores, quibusdam explicabo consequuntur minus itaque praesentium distinctio aliquam? Rem soluta ex perspiciatis nemo.</p>   
+        </div>
+    </main>
+    <!-- aside about section -->
+    <aside class="aside1">
+        <div class="hi aside">
+            <img src="../html/Portfolio/html/Assets/4_1.jpg" alt="pic1">
+            <h3>Hi, I'm Midhin</h1>
+            <p>fullstack Developer</p>  
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit earum molestiae est modi. Itaque, sunt. Magni iure cum voluptas eveniet nihil, modi impedit vel debitis optio cumque omnis qui quae? Eius iure omnis, voluptatibus quasi quis eaque delectus non accusantium! Veniam eum, quidem ipsa aliquam ex fugiat officiis aut dolore?</p> 
+        </div>
+    </aside>
+
+    <nav class="nav1" id="project">
+        <a href="#"> <h1>Projects</h1></a>
+    </nav>
+
+    <aside class="aside2_1">
+        <div class="project1">
+            <!-- <div class="project1">
+                <img src="../html/Portfolio/html/Assets/amg4.png" alt="pic2">
+            </div> -->
+        </div>
+        </aside>
+
+    <aside class="aside2_2">
+        <div class="project1">
+            <h3>Project 1</h3>
+            <img src="../html/Portfolio/html/Assets/amg1.png" alt="pic1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, qui.</p>
+        </div>
+        <br>
+        <br>
+        <div class="project1">
+        <h3>Project 2</h3>
+        <img src="../html/Portfolio/html/Assets/amg1.png" alt="pic1">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, qui.</p>
+    </div></aside>
+
+    <aside class="aside2_3">
+        <div class="project1">
+            <h3>Project 3</h3>
+            <img src="../html/Portfolio/html/Assets/amg1.png" alt="pic1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, qui.</p>
+        </div>
+        <br>
+        <br>
+        <div class="project1">
+            <h3>Project 4</h3>
+            <img src="../html/Portfolio/html/Assets/amg1.png" alt="pic1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, qui.</p>
+        </div>
+
+    </aside>
+    <nav class="nav2" id="blog">
+        <a href="#"> <h1>Blogs</h1></a>
+    </nav>
+    
+    <aside class="aside3_2"> <div>
+        <div>
+            <a href="https://medium.com/@midhinmurali3/s-o-l-i-d-the-five-principles-of-guidelines-for-software-engineers-1939fcc96b40" target="_blank">Preview the link</a>
+        </div>
+    </div>
+    </aside>
+    <aside class="aside3_3">
+        <div>
+            <a href="https://medium.com/@midhinmurali3/object-oriented-paradigm-what-is-it-and-why-do-we-need-it-a-simple-explanation-998ad10ccaee" target="_blank">Preview the link</a>
+        </div>
+    </aside>
+    <nav class="Youtube nav3" id="youtube">
+        <a href="#"> <h1>Youtube</h1></a>
+    </nav>
+    
+    <aside class="aside4_2">
+        <div>
+            <iframe src="https://www.youtube.com/embed/oK4uZqmfFGk" frameborder="0"></iframe>
+            </iframe>
+        </div>
+        <br>
+        <br>
+        <div>
+            <iframe src="https://www.youtube.com/embed/eF3t9IVmgss" frameborder="0"></iframe>
+            </iframe>
+        </div>
+    </aside>
+    <aside class="aside4_3"><div>
+        <iframe src="https://www.youtube.com/embed/o8mbFEwXAw8" frameborder="0"></iframe>
+        </iframe>
+    </div>
+    <br>
+    <br>
+    <div>
+        <iframe src="https://www.youtube.com/embed/QQUbU-AONBw" frameborder="0"></iframe>
+        </iframe>
+    </div></aside>
+    <footer id="Contact">
+        <a href="#"> <h1>Contact Me</h1></a>
+        <br>
+        <br>
+        <div>
+            <p>Midhin</p>
+            <br>
+            
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" required>
+                <br>
+                <br>
+                
+                <input type="submit" value=" send ">
+            </form>
+            <p>
+                <a href="mailto:ms.midhin@gmail.com" target="_blank">
+            </p>        
+        </div>
+    </footer>
+</body>
+</html>
